@@ -25,9 +25,9 @@ class App extends Component {
     const textInput = this.state.text.split("");
     const blocks = (
       <div>
-        {textInput.map((l,i) => {
-          return <CharComponent click={() => this.deleteHandler(i)} letter={l} key={i}> This is letter: </CharComponent>
-        })}
+        {textInput.map((l,i) => 
+          <CharComponent click={() => this.deleteHandler(i)} letter={l} key={i}> This is letter: </CharComponent>
+        )}
       </div>
     );
 
