@@ -1,8 +1,7 @@
 import React from 'react';
 
-let warning = "";
-
 const validationComponent = (props) => {
+	let warning = "";
 	if (props.textLength >= 5) {
 				warning = "Text long enough!"
 			} else {
