@@ -16,8 +16,8 @@ class App extends Component {
 
   deleteHandler = (index) => {
     const deleter = this.state.text.split("");
-    let deleter2 = deleter.splice(index, 1);
-    const newText = deleter2.join("");
+    deleter.splice(index, 1);
+    const newText = deleter.join("");
     this.setState({text: newText});
   }
 
